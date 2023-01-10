@@ -10,4 +10,12 @@ app.get("/endpointsenior",(req,res)=>{
 res.send("Endpoint hecho por senior")
 })
 
+app.get("/endpoinjr",(req,res)=>{
+    res.send("Endpoin hecho por jr")
+})
+
+app.get("/nuevoEndpoint",(req,res)=>{
+    res.send("otro endpoint")
+})
+
 app.listen(8080,()=>console.log("Listening"))
