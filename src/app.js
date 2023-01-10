@@ -2,6 +2,8 @@ import express from "express";
 
 const app = express();
 
+const PORT = process.env.PORT || 8080
+
 app.get("/",(req,res)=>{
     res.send("Inicio del servidor")
 })
@@ -18,4 +20,4 @@ app.get("/nuevoEndpoint",(req,res)=>{
     res.send("otro endpoint")
 })
 
-app.listen(8080,()=>console.log("Listening"))
+app.listen(PORT,()=>console.log("Listening on " + PORT))
